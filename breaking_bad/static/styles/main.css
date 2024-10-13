@@ -5,8 +5,6 @@ html, body {
 	font-family: Comic Sans, Comic Sans MS, cursive;
     font-size: larger;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%; 
 }
 
 img:hover {
@@ -20,6 +18,20 @@ img:hover {
 
 .content {
     display: flex;
+    margin: 5%;
+}
+
+.content-left {
+    background-color: black;
+}
+
+.content-right {
+    background-color: white;
+}
+
+.content-left, .content-right {
+    margin: 1%;
+    padding: 2%;
 }
 
 h1 {
@@ -37,6 +49,6 @@ p, .text {
     text-align: left;
 }
 
-ul.images li {
+/* ul.images li {
 	display: inline;
-}
+} */
