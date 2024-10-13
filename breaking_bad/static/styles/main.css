@@ -40,15 +40,15 @@ h1 {
     font-size: 65px;
 }
 
-p, .text {
+p, .list {
     color: #fff54f;
     text-align: justify;
 }
 
-.text {
+.list {
     text-align: left;
 }
 
-/* ul.images li {
-	display: inline;
-} */
+img {
+    width: 450px;
+}
