@@ -7,14 +7,14 @@ html, body {
     text-align: center;
 }
 
+/* for fun
+https://www.geeksforgeeks.org/how-to-rotate-an-image-on-hover-in-css/  */
 img:hover {
     transition: transform 50s ease;
-    transform: rotate(360deg);
-    /* 
-    for fun
-    https://www.geeksforgeeks.org/how-to-rotate-an-image-on-hover-in-css/ 
-    */
+    transform: rotate(360deg); 
 }
+
+/* BIG */
 
 .content {
     display: flex;
@@ -25,6 +25,13 @@ img:hover {
     background-color: black;
 }
 
+.content-left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
 .content-right {
     background-color: white;
 }
@@ -32,7 +39,10 @@ img:hover {
 .content-left, .content-right {
     margin: 1%;
     padding: 2%;
+    border-radius: 10px;
 }
+
+/* TEXT */
 
 h1 {
     font-family: times, helvetic, sans-serif;
@@ -49,6 +59,9 @@ p, .list {
     text-align: left;
 }
 
+/* IMG */
+
 img {
     width: 450px;
+    border-radius: 10px;
 }
