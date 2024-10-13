@@ -18,6 +18,10 @@ img:hover {
     */
 }
 
+.content {
+    display: flex;
+}
+
 h1 {
     font-family: times, helvetic, sans-serif;
     color: azure;
