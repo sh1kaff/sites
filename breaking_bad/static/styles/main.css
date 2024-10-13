@@ -1,0 +1,38 @@
+/* reference: http://www.savewalterwhite.com/ */
+
+html, body {
+    background: #1ba11a url(../images/background.png) top left repeat;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: larger;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+
+img:hover {
+    transition: transform 50s ease;
+    transform: rotate(360deg);
+    /* 
+    for fun
+    https://www.geeksforgeeks.org/how-to-rotate-an-image-on-hover-in-css/ 
+    */
+}
+
+h1 {
+    font-family: times, helvetic, sans-serif;
+    color: azure;
+    font-size: 65px;
+}
+
+p, .text {
+    color: #fff54f;
+    text-align: justify;
+}
+
+.text {
+    text-align: left;
+}
+
+ul.images li {
+	display: inline;
+}
