@@ -43,6 +43,22 @@ img:hover {
     border-radius: 10px;
 }
 
+.header {
+    background-color: rgba(237, 238, 89, 0.84);
+    padding: 0.5cap;
+    border-radius: 10px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.header ul li {
+    margin-right: 2%;
+}
+
 /* TEXT */
 
 h1 {
