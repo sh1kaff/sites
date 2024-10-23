@@ -59,18 +59,19 @@ img:hover {
     margin-right: 2%;
 }
 
-div.container {
+.container {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgba(128, 226, 122, 0.8);
 }
 
-div.container div.block {
+.block, .container img {
     border-radius: 10px;
     height: 200px;
+    margin: 10px;
     width: 200px;
-    background-color: white;
+    background-color: rgba(24, 108, 20, 0.8);
 }
 
 
