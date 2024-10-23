@@ -59,9 +59,25 @@ img:hover {
     margin-right: 2%;
 }
 
+div.container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+div.container div.block {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+
+
+
 /* TEXT */
 
-h1 {
+h1.main {
     font-family: times, helvetic, sans-serif;
     color: azure;
     font-size: 65px;
