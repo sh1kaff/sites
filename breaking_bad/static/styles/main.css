@@ -109,6 +109,38 @@ img:hover {
     background-color: rgba(24, 108, 20, 0.8);
 }
 
+.container-4 {
+    position: relative;
+    height: 800px;
+
+    border: 3px solid aliceblue;
+    border-radius: 10px;
+    background-color: rgba(128, 226, 122, 0.8);
+}
+
+.block-4 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(24, 108, 20, 0.8);
+}
+
+.one {
+    left: 400px;
+    top: 100px;
+}
+.two {
+    left: 550px;
+    top: 250px;
+}
+.three {
+    left: 700px;
+    top: 400px;
+}
+
 /* TEXT */
 
 h1.main {
