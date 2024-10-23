@@ -1,0 +1,29 @@
+
+table {
+   border: 3px solid black;
+   border-collapse: collapse;
+   margin: auto;
+}
+
+caption {
+   font-size: larger;
+}
+
+th {
+   border: 2px solid black;
+   text-align: left;
+   background: linear-gradient(45deg, #607156, #4bc592);
+}
+
+td {
+   border: 2px solid black;
+   padding: 15px 20px;
+}
+
+.odd td {
+   background: linear-gradient(45deg, #4cb779, #4bc592);
+}
+
+.even td {
+   background: linear-gradient(45deg, #346a4a, #57e324);
+}
