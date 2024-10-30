@@ -17,7 +17,7 @@
     </div>
 
     
-    <table>
+    <table id="table">
         <caption>Очень необычные люди</caption>
         <tr>
             <th>ID</th>
@@ -61,7 +61,22 @@
             <td>23 года</td>
             <td>4/10</td>
         </tr>
-        
     </table>
+
+
+    <form id="addform">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname"><br>
+
+        <label for="age">Age</label>
+        <input type="text" name="age"><br>
+
+        <label for="seclevel">SC Level</label>
+        <input type="text" name="seclevel"><br>
+
+        <input type="submit" value="Add">
+    </form>
+
+    <script src="static/scripts/formadd.js"></script>
 </body>
 </html>
