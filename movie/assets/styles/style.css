@@ -5,3 +5,13 @@
 .card-group .card {
     padding: 10px
 }
+
+.sidebar {
+    position: fixed;
+    top: 70px; /* Отступ, чтобы не перекрывать navbar */
+    left: 0;
+    width: 180px;
+    height: 100%; /* Чтобы тянулось на всю высоту экрана */
+    background-color: #f8f9fa; /* Светлый фон для меню */
+    padding: 15px;
+}

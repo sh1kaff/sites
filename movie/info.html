@@ -5,23 +5,19 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Info</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </head>
-<body>
+<body data-spy="scroll" data-target="#sideNav" data-offset="0">
+
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Tipo Stranitsa Filmov, Ili Pro Aktera Chto-to</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="info.html">Info</a>
                     </li>
@@ -32,69 +28,90 @@
             </div>
         </div>
     </nav>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/AdamTV.webp" class="d-block w-100" alt="Adam watch TV">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/AdamInterview.jpg" class="d-block w-100" alt="Adam Interview">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/AdamSmile.webp" class="d-block w-100" alt="Adam smiles">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
-    </div>
-
-    <div class="card-group">
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/Zohan.webp" class="card-image-top" alt="Adam smiles">
-            <div class="card-body">
-                <h5 class="card-title">Не шутите с Zоханом!</h5>
-                <p class="card-text">Американская кинокомедия о израильском спецназовце Зохане Двире, инсценировавшем свою смерть и уехавшем в Нью-Йорк, чтобы стать парикмахером</p>
-                <a href="https://www.kinopoisk.ru/film/280826/" class="btn btn-primary">Kinopoisk</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/Twins.jpg" class="card-image-top" alt="Adam smiles">
-            <div class="card-body">
-                <h5 class="card-title">Такие разные близнецы</h5>
-                <p class="card-text">Американская комедия 2011 года, режиссер Деннис Дуган.</p>
-                <a href="https://www.kinopoisk.ru/film/462883/" class="btn btn-primary">Kinopoisk</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/OK.webp" class="card-image-top" alt="Adam smiles">
-            <div class="card-body">
-                <h5 class="card-title">Одноклассники 2</h5>
-                <p class="card-text">Комедийный фильм режиссера Денниса Дугана с Адамом Сэндлером в главной роли.</p>
-                <a href="https://www.kinopoisk.ru/film/663191/" class="btn btn-primary">Kinopoisk</a>
-            </div>
-        </div>
-    </div>
-
-    <p style="text-align: center;">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Поговорим об Адаме Сендлере...
-        </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Адам Сэндлер — это американский актёр, комик, сценарист и продюсер. Он стал известен благодаря своим ролям в комедиях, таких как "Счастливчик Гилмор" и "Большой папа". За фильм "Певец на свадьбе" он получил "Золотой глобус".
-        </div>
-    </div>
     
+    
+
+    <!-- SideBar -->
+    <div class="d-flex">
+        <nav id="sideNav" class="nav flex-column bg-light p-3" style="width: 200px; position: fixed; top: 0; left: 0; height: 100vh;">
+            <a class="nav-link" href="#carouselSection">Карусель</a>
+            <a class="nav-link" href="#cardsSection">Карточки с фильмами</a>
+            <a class="nav-link" href="#infoSection">Краткая информация об актёре</a>
+        </nav>
+
+        <!-- Main -->
+        <div class="container" style="margin-left: 220px; padding-top: 20px;">
+
+            <!-- Carousel -->
+            <div id="carouselSection">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/AdamTV.webp" class="d-block w-100" alt="Adam watch TV">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/AdamInterview.jpg" class="d-block w-100" alt="Adam Interview">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/AdamSmile.webp" class="d-block w-100" alt="Adam smiles">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div id="cardsSection" class="card-group mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/Zohan.webp" class="card-image-top" alt="Adam smiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Не шутите с Zоханом!</h5>
+                        <p class="card-text">Американская кинокомедия о израильском спецназовце Зохане Двире, инсценировавшем свою смерть и уехавшем в Нью-Йорк, чтобы стать парикмахером</p>
+                        <a href="https://www.kinopoisk.ru/film/280826/" class="btn btn-primary">Kinopoisk</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/Twins.jpg" class="card-image-top" alt="Adam smiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Такие разные близнецы</h5>
+                        <p class="card-text">Американская комедия 2011 года, режиссер Деннис Дуган.</p>
+                        <a href="https://www.kinopoisk.ru/film/462883/" class="btn btn-primary">Kinopoisk</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/OK.webp" class="card-image-top" alt="Adam smiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Одноклассники 2</h5>
+                        <p class="card-text">Комедийный фильм режиссера Денниса Дугана с Адамом Сэндлером в главной роли.</p>
+                        <a href="https://www.kinopoisk.ru/film/663191/" class="btn btn-primary">Kinopoisk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div id="infoSection" class="mt-5">
+                <p style="text-align: center;">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Поговорим об Адаме Сендлере...
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Адам Сэндлер — это американский актёр, комик, сценарист и продюсер. Он стал известен благодаря своим ролям в комедиях, таких как "Счастливчик Гилмор" и "Большой папа". За фильм "Певец на свадьбе" он получил "Золотой глобус".
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
