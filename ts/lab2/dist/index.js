@@ -44,6 +44,48 @@ var edibleVegetableOils;
     edibleVegetableOils["SOYBEAN"] = "Soybean oil";
     edibleVegetableOils["SUNFLOWER"] = "Sunflower oil";
 })(edibleVegetableOils || (edibleVegetableOils = {}));
+/*
+    Реализуйте метод, который будет выводить информацию в
+    консоль о создаваемом объекте типа Cat или Dog, применяя
+    Обобщенный тип, ограниченный типом Pet.
+*/
+class Pet {
+    constructor() {
+        this.name = 'Some pet';
+        this.age = -1;
+    }
+    speak() {
+        return "No speak. I am fish!";
+    }
+}
+class Dog extends Pet {
+    constructor() {
+        super(...arguments);
+        this.label = "AngryHunter";
+        this.age = 8;
+    }
+    speak() {
+        return "Yaw-Gaw!";
+    }
+}
+class Cat extends Pet {
+    constructor() {
+        super(...arguments);
+        this.name = 'Barsik';
+        this.age = 2;
+    }
+    speak() {
+        return "Miyau!";
+    }
+}
+function printInfo(pet) {
+    console.log(`Name: ${pet.name}`);
+    if ("label" in pet) {
+        console.log(`Label: ${pet.label}`);
+    }
+    console.log(`Age: ${pet.age}`);
+    pet.speak();
+}
 // Вывод
 console.log(avg([2, 2, 2]));
 const array2D = [
@@ -55,3 +97,7 @@ console.log(countInterval(array2D, [1, 3]));
 const cortege = ["Alex", "Smith", "Jr"];
 console.log(concat(cortege));
 console.log(edibleVegetableOils.COCONUT);
+const dog = new Dog;
+const cat = new Cat;
+printInfo(dog);
+printInfo(cat);
