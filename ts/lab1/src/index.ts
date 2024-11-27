@@ -28,8 +28,16 @@ const data: toJsonStringify = {
 
 const jsonString: string = JSON.stringify(data);
 
-
-console.log(jsonString);
-
-
 console.log(sum(1,2,3));
+
+console.log(bool);
+console.log(num);
+console.log(bi);
+console.log(str);
+console.log(some);
+console.log(func);
+console.log(id);
+console.log(obj);
+
+console.log(data);
+console.log(jsonString);
