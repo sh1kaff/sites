@@ -32,7 +32,13 @@ declare class Cat extends Pet {
     speak(): string;
 }
 declare function printInfo<T extends Pet>(pet: T): void;
+interface Scramble {
+    cookTime: number;
+    oil: edibleVegetableOils;
+    eggType: string;
+}
 declare const array2D: number[][];
 declare const cortege: strCortege;
 declare const dog: Dog;
 declare const cat: Cat;
+declare const scramble: Scramble;

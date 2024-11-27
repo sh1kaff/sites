@@ -1,4 +1,4 @@
-// Одномерный массив
+// 1 Одномерный массив
 // Реализовать метод, возвращающий среднее арифметическое, получаемое из массива целых чисел
 const avg = (array) => {
     let result = 0;
@@ -28,7 +28,7 @@ const concat = (cortege) => {
     }
     return result;
 };
-// Перечисление
+// 4 Перечисление
 // Создайте тип перечисление для типов пищевых растительных масел (рапсовое, подсолнечное и т.д.). Выведите какой-либо тип масла в консоль.
 var edibleVegetableOils;
 (function (edibleVegetableOils) {
@@ -45,6 +45,7 @@ var edibleVegetableOils;
     edibleVegetableOils["SUNFLOWER"] = "Sunflower oil";
 })(edibleVegetableOils || (edibleVegetableOils = {}));
 /*
+    5
     Реализуйте метод, который будет выводить информацию в
     консоль о создаваемом объекте типа Cat или Dog, применяя
     Обобщенный тип, ограниченный типом Pet.
@@ -87,17 +88,29 @@ function printInfo(pet) {
     pet.speak();
 }
 // Вывод
+// 1
 console.log(avg([2, 2, 2]));
+// 2
 const array2D = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ];
 console.log(countInterval(array2D, [1, 3]));
+// 3
 const cortege = ["Alex", "Smith", "Jr"];
 console.log(concat(cortege));
+// 4
 console.log(edibleVegetableOils.COCONUT);
+// 5
 const dog = new Dog;
 const cat = new Cat;
 printInfo(dog);
 printInfo(cat);
+// 6
+const scramble = {
+    cookTime: 20,
+    oil: edibleVegetableOils.CORN,
+    eggType: "C0"
+};
+console.log(JSON.stringify(scramble));
