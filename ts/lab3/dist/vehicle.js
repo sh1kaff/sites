@@ -31,10 +31,9 @@ class Vehicle {
     set VIN(VIN) {
         if (VIN.length != 17) {
             this._VIN = "0".repeat(17);
+            return;
         }
-        else {
-            this._VIN = VIN;
-        }
+        this._VIN = VIN;
     }
     get regNum() {
         return this._regNum;
@@ -43,10 +42,9 @@ class Vehicle {
         const exp = /^[a-z]\d\d\d[a-z]{2}\d{1,3}$/i;
         if (exp.test(regNum)) {
             this._regNum = regNum;
+            return;
         }
-        else {
-            this._regNum = "a000aa000";
-        }
+        this._regNum = "a000aa000";
     }
     get owner() {
         return this._owner;

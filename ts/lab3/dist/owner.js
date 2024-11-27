@@ -42,12 +42,26 @@ class Owner {
         return this._ser;
     }
     set ser(ser) {
+        if (ser < 100000) {
+            this._ser = 0;
+            return;
+        }
+        if (ser % 1 !== 0) {
+            ser = Math.floor(ser);
+        }
         this._ser = ser;
     }
     get num() {
         return this._num;
     }
     set num(num) {
+        if (num < 1000) {
+            this._num = 0;
+            return;
+        }
+        if (num % 1 !== 0) {
+            num = Math.floor(num);
+        }
         this._num = num;
     }
     printInfo() {

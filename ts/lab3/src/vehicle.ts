@@ -67,9 +67,10 @@ class Vehicle implements IVehicle {
     set VIN(VIN: string) {
         if (VIN.length != 17) {
             this._VIN = "0".repeat(17);
-        } else {
-            this._VIN = VIN;
+            return;
         }
+        
+        this._VIN = VIN;
     }
 
     get regNum() {
@@ -80,10 +81,10 @@ class Vehicle implements IVehicle {
         const exp: RegExp = /^[a-z]\d\d\d[a-z]{2}\d{1,3}$/i;
         if ( exp.test(regNum) ) {
             this._regNum = regNum;
-        } else {
-            this._regNum = "a000aa000";
+            return;
         }
         
+        this._regNum = "a000aa000";
     }
 
     get owner() {

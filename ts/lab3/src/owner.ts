@@ -9,8 +9,6 @@
     printInfo(): void;
 }
 
-
-
 class Owner implements IOwner {
     private _surname: string;
     private _name: string;
@@ -75,6 +73,15 @@ class Owner implements IOwner {
     }
 
     set ser(ser: number) {
+        if (ser < 100000) {
+            this._ser = 0;
+            return;
+        }
+
+        if (ser % 1 !== 0) {
+            ser = Math.floor(ser);
+        }
+        
         this._ser = ser;
     }
 
@@ -83,6 +90,15 @@ class Owner implements IOwner {
     }
 
     set num(num: number) {
+        if (num < 1000) {
+            this._num = 0;
+            return;
+        }
+
+        if (num % 1 !== 0) {
+            num = Math.floor(num);
+        }
+
         this._num = num;
     }
 

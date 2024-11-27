@@ -15,9 +15,10 @@ console.log(JSON.stringify(vehicle));
 console.log(JSON.stringify(car));
 console.log(JSON.stringify(motorbike));
 
-console.log(vehicleStorage);
-
 owner.printInfo();
 vehicle.printInfo();
 car.printInfo();
 motorbike.printInfo();
+
+console.log(JSON.stringify(vehicleStorage));
+
