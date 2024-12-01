@@ -2,3 +2,4 @@
     Object.seal(constructor);
     Object.seal(constructor.prototype);
 }
+
