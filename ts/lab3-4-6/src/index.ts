@@ -36,3 +36,5 @@ Object.defineProperty(
     "nowItsMyCar",
     {value: true}
 );
+
+console.log(vehicle);
