@@ -1,5 +1,7 @@
 ﻿import { Transport } from "./vehicle.js";
 import { VehicleStorage } from "./vehiclestorage.js";
+import { IDTypes, bodyTypes, carClasses } from "./enums.js";
+import { Owner } from "./owner.js";
 
 import Vehicle = Transport.Vehicle;
 import Car = Transport.Car;

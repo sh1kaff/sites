@@ -1,4 +1,4 @@
-class VehicleStorage {
+export class VehicleStorage {
     constructor(data) {
         this.creationDate = new Date();
         this.data = data;

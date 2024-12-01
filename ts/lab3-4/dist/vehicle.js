@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Transport;
+export var Transport;
 (function (Transport) {
     class Vehicle {
         constructor(make, model, yearIssue, VIN, regNum, owner) {

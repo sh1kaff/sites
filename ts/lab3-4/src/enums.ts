@@ -1,10 +1,10 @@
-﻿enum IDTypes {
+﻿export enum IDTypes {
     PASSPORT = "Passport",
     DRIVER_LICENSE = "Driver license",
     BC = "Birthday Certificate"
 }
 
-enum bodyTypes {
+export enum bodyTypes {
     MICRO = "Micro",
     SEDAN = "Sedan",
     CUV = "Crossover utility vehicle",
@@ -22,6 +22,6 @@ enum bodyTypes {
     TRUCK = "Truck"
 }
 
-enum carClasses {
+export enum carClasses {
     A, B, C, D, E, F
 }

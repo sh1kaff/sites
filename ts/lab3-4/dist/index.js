@@ -1,15 +1,15 @@
-"use strict";
-/// <reference path="vehicle.ts" />
-Object.defineProperty(exports, "__esModule", { value: true });
-const enums_js_1 = require("./enums.js");
+import { Transport } from "./vehicle.js";
+import { VehicleStorage } from "./vehiclestorage.js";
+import { IDTypes, bodyTypes, carClasses } from "./enums.js";
+import { Owner } from "./owner.js";
 var Vehicle = Transport.Vehicle;
 var Car = Transport.Car;
 var Motorbike = Transport.Motorbike;
-let owner = new Owner("Alex", "Smith", "Jr", new Date, enums_js_1.Enums.IDTypes.PASSPORT, 876456, 1232);
+let owner = new Owner("Alex", "Smith", "Jr", new Date, IDTypes.PASSPORT, 876456, 1232);
 let vehicle = new Vehicle("Lada", "2210", new Date(), "3hdb37fhsbfh3bdbrh", "e168va56", owner);
-let car = new Car("Audi", "RS6", new Date(), "notvalid", "notvalid", enums_js_1.Enums.bodyTypes.HATCHBACK, enums_js_1.Enums.carClasses.B, owner);
-let car_2 = new Car("Lada", "Granta", new Date(), "notvalid", "notvalid", enums_js_1.Enums.bodyTypes.SEDAN, enums_js_1.Enums.carClasses.B, owner);
-let car_3 = new Car("Honda", "Civic type r", new Date(), "notvalid", "notvalid", enums_js_1.Enums.bodyTypes.HATCHBACK, enums_js_1.Enums.carClasses.B, owner);
+let car = new Car("Audi", "RS6", new Date(), "notvalid", "notvalid", bodyTypes.HATCHBACK, carClasses.B, owner);
+let car_2 = new Car("Lada", "Granta", new Date(), "notvalid", "notvalid", bodyTypes.SEDAN, carClasses.B, owner);
+let car_3 = new Car("Honda", "Civic type r", new Date(), "notvalid", "notvalid", bodyTypes.HATCHBACK, carClasses.B, owner);
 let motorbike = new Motorbike("Yamaha", "228", new Date(), "1234567890qwerty", "a228ye228", "Hard", true, owner);
 let vehicleStorage = new VehicleStorage([car, car_2, car_3]);
 console.log(JSON.stringify(owner));

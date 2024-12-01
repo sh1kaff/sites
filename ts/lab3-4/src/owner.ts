@@ -1,4 +1,6 @@
-﻿interface IOwner {
+﻿import { IDTypes } from "./enums";
+
+export interface IOwner {
     surname: string;
     name: string;
     patronymic: string;
@@ -9,7 +11,7 @@
     printInfo(): void;
 }
 
-class Owner implements IOwner {
+export class Owner implements IOwner {
     private _surname: string;
     private _name: string;
     private _patronymic: string;

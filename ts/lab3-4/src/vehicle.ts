@@ -1,4 +1,7 @@
-﻿export namespace Transport {
+﻿import { IOwner } from "./owner";
+import { bodyTypes, carClasses } from "./enums";
+
+export namespace Transport {
 
 export interface IVehicle {
     make: string;

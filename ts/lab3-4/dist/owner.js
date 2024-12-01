@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Owner {
+export class Owner {
     constructor(surname, name, patronymic, birthday, ID, ser, num) {
         this.surname = surname;
         this.name = name;
