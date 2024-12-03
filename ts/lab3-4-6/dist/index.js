@@ -22,3 +22,4 @@ car.printInfo();
 motorbike.printInfo();
 console.log(JSON.stringify(vehicleStorage));
 Object.defineProperty(vehicle, "nowItsMyCar", { value: true });
+console.log("Objj: ", vehicle);
