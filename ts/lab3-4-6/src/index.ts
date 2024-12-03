@@ -37,4 +37,4 @@ Object.defineProperty(
     {value: true}
 );
 
-console.log("Obj: ", vehicle);
+console.log("Objj: ", vehicle);
