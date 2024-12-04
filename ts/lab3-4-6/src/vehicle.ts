@@ -1,6 +1,6 @@
 ﻿import { IOwner } from "./owner.js";
 import { bodyTypes, carClasses } from "./enums.js";
-import { seal } from "./decor.js";
+import { seal, upper } from "./decor.js";
 
 export namespace Transport {
 
@@ -42,6 +42,7 @@ export class Vehicle implements IVehicle {
         this.owner = owner;
     }
 
+    @upper
     get make() {
         return this._make;
     }
@@ -50,6 +51,7 @@ export class Vehicle implements IVehicle {
         this._make = make;
     }
 
+    @upper
     get model() {
         return this._model;
     }
@@ -66,6 +68,7 @@ export class Vehicle implements IVehicle {
         this._yearIssue = yearIssue;
     }
 
+    @upper
     get VIN() {
         return this._VIN;
     }

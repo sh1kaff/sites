@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { seal } from "./decor.js";
+import { seal, upper } from "./decor.js";
 export var Transport;
 (function (Transport) {
     let Vehicle = class Vehicle {
@@ -71,6 +71,15 @@ export var Transport;
             `);
         }
     };
+    __decorate([
+        upper
+    ], Vehicle.prototype, "make", null);
+    __decorate([
+        upper
+    ], Vehicle.prototype, "model", null);
+    __decorate([
+        upper
+    ], Vehicle.prototype, "VIN", null);
     Vehicle = __decorate([
         seal
     ], Vehicle);
