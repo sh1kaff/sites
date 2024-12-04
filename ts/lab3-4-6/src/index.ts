@@ -31,10 +31,10 @@ motorbike.printInfo();
 
 console.log(JSON.stringify(vehicleStorage));
 
-// Object.defineProperty(
-//     Vehicle,
-//     "nowItsMyCar",
-//     {value: true}
-// );
+Object.defineProperty(
+    Vehicle,
+    "nowItsMyCar",
+    {value: true}
+);
 
 console.log(vehicle.VIN)
