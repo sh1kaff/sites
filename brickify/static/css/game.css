@@ -1,0 +1,9 @@
+﻿.application .sandbox {
+    /* height: calc(100vw / 1.5);
+    width: calc(100vw / 1.5); */
+
+    height: 500px;
+    width: 500px;
+
+    background-color: antiquewhite;
+}
