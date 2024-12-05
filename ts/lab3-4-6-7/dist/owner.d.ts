@@ -10,14 +10,14 @@ export interface IOwner {
     printInfo(): void;
 }
 export declare class Owner implements IOwner {
-    private _surname;
     private _name;
+    private _surname;
     private _patronymic;
     private _birthday;
     private _ID;
     private _ser;
     private _num;
-    constructor(surname: string, name: string, patronymic: string, birthday: Date, ID: IDTypes, ser: number, num: number);
+    constructor(name: string, surname: string, patronymic: string, birthday: Date, ID: IDTypes, ser: number, num: number);
     get surname(): string;
     set surname(surname: string);
     get name(): string;

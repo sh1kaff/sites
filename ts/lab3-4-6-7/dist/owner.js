@@ -1,7 +1,7 @@
 export class Owner {
-    constructor(surname, name, patronymic, birthday, ID, ser, num) {
-        this.surname = surname;
+    constructor(name, surname, patronymic, birthday, ID, ser, num) {
         this.name = name;
+        this.surname = surname;
         this.patronymic = patronymic;
         this.birthday = birthday;
         this.ID = ID;

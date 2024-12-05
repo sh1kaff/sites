@@ -4,6 +4,8 @@ interface IVehicleStorage<T extends Transport.Vehicle> {
     creationDate: Date;
     data: T[];
     getData(): T[];
+    sortByOwnerSurname(): T[];
+    getAllVehicleOwnerSurnameStartsWith(start: string): T[];
 }
 
 export class VehicleStorage<T extends Transport.Vehicle> implements IVehicleStorage<T> {
@@ -33,5 +35,21 @@ export class VehicleStorage<T extends Transport.Vehicle> implements IVehicleStor
     
     getData(): T[] {
         return this.data;
+    }
+
+    sortByOwnerSurname(): T[] {
+        return this.data.sort( (v1: T, v2: T) => v1.owner.surname.toLowerCase().localeCompare(v2.owner.surname.toLowerCase()) );
+    }
+
+    getAllVehicleOwnerSurnameStartsWith(start: string): T[] {
+        let resultArray: T[] = [];
+
+        for (let v of this._data) {
+            if ( v.owner.surname.toLowerCase().startsWith(start.toLowerCase()) ) {
+                resultArray.push(v);
+            }
+        }
+
+        return resultArray;
     }
 }

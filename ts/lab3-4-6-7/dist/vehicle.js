@@ -109,6 +109,9 @@ export var Transport;
             For sports: ${(this.forSports) ? "yes" : "no"}
             `);
         }
+        getMotorbikeInfo() {
+            return { frameType: this.frameType, forSports: this.forSports };
+        }
     }
     Transport.Motorbike = Motorbike;
     class Car extends Vehicle {

@@ -17,6 +17,10 @@ export declare namespace Transport {
     interface IMotorbike extends IVehicle {
         frameType: string;
         forSports: boolean;
+        getMotorbikeInfo(): {
+            frameType: string;
+            forSports: boolean;
+        };
     }
     class Vehicle implements IVehicle {
         private _make;
@@ -49,6 +53,10 @@ export declare namespace Transport {
         get forSports(): boolean;
         set forSports(forSports: boolean);
         printInfo(): void;
+        getMotorbikeInfo(): {
+            frameType: string;
+            forSports: boolean;
+        };
     }
     class Car extends Vehicle implements ICar {
         private _bodyType;

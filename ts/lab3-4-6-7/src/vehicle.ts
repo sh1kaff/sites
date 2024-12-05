@@ -22,6 +22,7 @@ export interface ICar extends IVehicle {
 export interface IMotorbike extends IVehicle {
     frameType: string;
     forSports: boolean;
+    getMotorbikeInfo(): {frameType: string, forSports: boolean};
 }
 
 @seal
@@ -154,6 +155,10 @@ export class Motorbike extends Vehicle implements IMotorbike {
             For sports: ${(this.forSports) ? "yes" : "no"}
             `
         );
+    }
+
+    getMotorbikeInfo(): {frameType: string, forSports: boolean} {
+        return {frameType: this.frameType, forSports: this.forSports};
     }
 }
 

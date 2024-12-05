@@ -12,17 +12,17 @@ export interface IOwner {
 }
 
 export class Owner implements IOwner {
-    private _surname: string;
     private _name: string;
+    private _surname: string;
     private _patronymic: string;
     private _birthday: Date;
     private _ID: IDTypes;
     private _ser: number;
     private _num: number;
 
-    constructor(surname: string, name: string, patronymic: string, birthday: Date, ID: IDTypes, ser: number, num: number) {
-        this.surname = surname;
+    constructor(name: string, surname: string, patronymic: string, birthday: Date, ID: IDTypes, ser: number, num: number) {
         this.name = name;
+        this.surname = surname;
         this.patronymic = patronymic;
         this.birthday = birthday;
         this.ID = ID;
