@@ -1,6 +1,6 @@
 function getJSON(url) {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
+    xhr.open("GET", url, false);
 
     xhr.responseType = "json";
     
@@ -15,7 +15,7 @@ function getJSON(url) {
             return xhr.response;
         }
     };
-    
+
     xhr.onerror = () => {
         console.log("Query error!");
     };
