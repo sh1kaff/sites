@@ -1,0 +1,76 @@
+﻿{
+    "cars": [
+      {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2020,
+        "isElectric": false,
+        "price": 20000,
+        "features": {
+          "color": "Red",
+          "engineType": "Gasoline",
+          "hasSunroof": true,
+          "hasNavigationSystem": true,
+          "isAutomatic": true
+        },
+        "owners": [
+          {
+            "name": "John Doe",
+            "ownershipDuration": 3,
+            "isFirstOwner": true
+          },
+          {
+            "name": "Jane Smith",
+            "ownershipDuration": 2,
+            "isFirstOwner": false
+          }
+        ]
+      },
+      {
+        "make": "Tesla",
+        "model": "Model 3",
+        "year": 2022,
+        "isElectric": true,
+        "price": 35000,
+        "features": {
+          "color": "Blue",
+          "engineType": "Electric",
+          "hasSunroof": false,
+          "hasNavigationSystem": true,
+          "isAutomatic": true
+        },
+        "owners": [
+          {
+            "name": "Alice Green",
+            "ownershipDuration": 1,
+            "isFirstOwner": true
+          }
+        ]
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2021,
+        "isElectric": false,
+        "price": 27000,
+        "features": {
+          "color": "Black",
+          "engineType": "Gasoline",
+          "hasSunroof": true,
+          "hasNavigationSystem": false,
+          "isAutomatic": false
+        },
+        "owners": [
+          {
+            "name": "Bob White",
+            "ownershipDuration": 4,
+            "isFirstOwner": true
+          }
+        ]
+      }
+    ],
+    "totalCars": 3,
+    "averagePrice": 26666.67,
+    "isMarketOpen": true
+  }
+  
