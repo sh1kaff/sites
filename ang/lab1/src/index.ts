@@ -3,6 +3,7 @@
     xhr.open("GET", url)
 
     xhr.send();
+    console.log(1);
 
     xhr.timeout = 10000;
 
