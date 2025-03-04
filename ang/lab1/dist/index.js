@@ -1,7 +1,8 @@
-function getFile(url) {
+function getJSON(url) {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url);
     xhr.send();
+    xhr.responseType = "json";
     xhr.timeout = 10000;
     xhr.onload = () => {
         if (xhr.status != 200) {

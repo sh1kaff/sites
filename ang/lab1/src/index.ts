@@ -1,10 +1,10 @@
-﻿function getFile(url: string): string | void {
+﻿function getJSON(url: string): string | void {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url)
 
     xhr.send();
-    console.log(1);
 
+    xhr.responseType = "json";
     xhr.timeout = 10000;
 
     xhr.onload = () => {

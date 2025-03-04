@@ -1,1 +1,1 @@
-declare function getFile(url: string): string | void;
+declare function getJSON(url: string): string | void;
