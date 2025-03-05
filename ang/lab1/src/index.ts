@@ -13,7 +13,8 @@
         }
         else {
             console.log(`File '${url}' is uploaded!`);
-            return xhr.response;
+            console.log(xhr.response);
+            document.querySelector("#res").textContent = xhr.response;
         }
     };
 
