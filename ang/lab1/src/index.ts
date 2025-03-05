@@ -2,8 +2,6 @@
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url)
 
-    xhr.send();
-
     xhr.responseType = "json";
     xhr.timeout = 10000;
 
@@ -26,6 +24,14 @@
 
     xhr.onerror = () => {
         console.log("Query error!");
+        document.querySelector("#res").innerHTML = "Query error!";
     };
+
+    xhr.ontimeout = () => {
+        console.log("Request timed out!");
+        document.querySelector("#res").innerHTML = "Request timed out!";
+    };
+
+    xhr.send();
 }
 
