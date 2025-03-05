@@ -7,7 +7,7 @@ function getJSON(url) {
     let content = "";
     xhr.onload = () => {
         if (xhr.status != 200) {
-            content = `File '${url}' is not uploaded! (${xhr.status}: ${xhr.statusText})`;
+            content = `File '${url}' is not uploaded! (${xhr.status} ${xhr.statusText})`;
             console.log(content);
         }
         else {
