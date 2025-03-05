@@ -11,7 +11,7 @@ function getJSON(url) {
         else {
             console.log(`File '${url}' is uploaded!`);
             console.log(xhr.response);
-            document.querySelector("#res").textContent = xhr.response;
+            document.querySelector("#res").innerHTML = "<pre>" + JSON.stringify(xhr.response) + "</pre>";
         }
     };
     xhr.onerror = () => {
